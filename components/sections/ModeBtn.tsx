@@ -24,7 +24,7 @@ const ModeBtn = () => {
       onClick={() => setTheme(theme == 'dark' ? 'light' : 'dark')}
       aria-label='toggle theme'
     >
-      {theme === 'dark' ? <SunIcon className='w-5 h-5' /> : <MoonIcon className='w-4 h-4'  />}
+      {theme === 'dark' ? <SunIcon className='w-5 h-5' /> : <MoonIcon className='w-5 h-5'  />}
     </button>
   );
 };
