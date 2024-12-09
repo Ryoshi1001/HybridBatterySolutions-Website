@@ -15,19 +15,19 @@ export default function Home() {
               <Intro />
             </section>
 
-            <section className="">
+            <section className="mt-10">
               <Services />
             </section>
 
-            <section className="">
+            <section className="mt-10">
               <Vehicles />
             </section>
 
-            <section className="">
+            <section className="mt-10">
               <Testimonials />
             </section>
 
-            <section className="h-fit">
+            <section className="h-fit mt-10">
               <Appointment />
             </section>
           </div>

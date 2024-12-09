@@ -13,11 +13,10 @@ const Services = () => {
     <>
        <div id="services" className="text-4xl pl4 text-gradient font-bold">Services</div> 
 
-       <div className="w-full h-full py-8">
+       <div className="w-full h-full py-4">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         Get to know your Hybrid.
       </h2>
-      <small className="pl-8">All our work is guaranteed, labor and installation is included.</small>
       <Carousel items={cards} />
     </div>
     </>

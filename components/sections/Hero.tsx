@@ -22,7 +22,7 @@ const Hero = () => {
       ref={ref}
     >
       <GoogleGeminiEffect
-      description='Scroll below to see our services and contact information!'
+      description='Scroll ☝ up to see our services and contact information!'
       title="Hybrid Battery Solutions"
         pathLengths={[
           pathLengthFirst,
