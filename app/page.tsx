@@ -1,5 +1,6 @@
 import Appointment from '@/components/sections/Appointment';
 import Intro from '@/components/sections/Intro';
+import ModeBtn from '@/components/sections/ModeBtn';
 import Services from '@/components/sections/Services';
 import Testimonials from '@/components/sections/Testimonials';
 import Vehicles from '@/components/sections/Vehicles';
@@ -10,7 +11,8 @@ export default function Home() {
     <>
       <div className="h-auto">
         <TracingBeam>
-          <div className="px-4 xs:px-8 py-10">
+          <div className="px-4 xs:px-8 py-10 relative">
+          <ModeBtn/>  
             <section className="">
               <Intro />
             </section>

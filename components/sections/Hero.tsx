@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { useScroll, useTransform } from "framer-motion";
 import React from "react";
 import { GoogleGeminiEffect } from "../ui/google-gemini-effect";
@@ -18,7 +18,7 @@ const Hero = () => {
  
   return (
     <div
-      className="h-[300vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-24 overflow-clip"
+      className="h-[300vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md pt-24 overflow-clip relative"
       ref={ref}
     >
       <GoogleGeminiEffect

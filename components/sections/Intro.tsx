@@ -43,7 +43,7 @@ const Intro = () => {
               width={1800}
               height={1800}
               alt="hybrid car"
-              className='rounded-3xl'
+              className="rounded-3xl"
             />
           </div>
         </div>
