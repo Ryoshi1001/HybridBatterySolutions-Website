@@ -13,9 +13,9 @@ const Appointment = () => {
       <div className="flex mt-4  items-center justify-center">
         <Button
           borderRadius="1.75rem"
-          className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 font-bold"
+          className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 font-bold px-3"
         >
-          <a href="tel:5104141929">Book Your Appointment</a>
+          <a href="tel:5104141929">Request Service</a>
         </Button>
       </div>
     </>

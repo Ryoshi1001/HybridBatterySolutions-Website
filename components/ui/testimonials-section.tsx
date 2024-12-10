@@ -49,11 +49,11 @@ export default function FeaturesSectionDemo() {
     <div className="relative z-20 py-4 lg:py-10 max-w-[1440px] mx-auto">
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-          Packed with new releases
+          Packed with new reviews
         </h4>
 
         <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          Hybrid Battery Solutions
+          At Hybrid Battery Solutions we pride ourselves on delivering exceptional service and expertise in hybrid battery repair. Our customers are at the heart of what we do, and their experiences speak volumes about the quality of our work. In this section, you'll find heartfelt testimonials from satisfied clients who have trusted us with their hybrid battery needs.
         </p>
       </div>
 

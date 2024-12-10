@@ -60,7 +60,7 @@ const data = [
   {
     category: "Repair",
     title: "Any Hybrid Battery Related Warning.",
-    src: "/services3.jpg",
+    src: "/prius4.jpg",
     content: <DummyContent />,
   },
   {
@@ -85,7 +85,7 @@ const data = [
   {
     category: "Replacement",
     title: "Swap Your Battery Pack.",
-    src: "/services4.jpg",
+    src: "/services6.jpg",
     content: <DummyContent />,
   },
   // {
