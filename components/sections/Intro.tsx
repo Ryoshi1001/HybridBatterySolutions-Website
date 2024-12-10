@@ -68,7 +68,7 @@ const Intro = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-3/5 bg-red-50 h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl  relative">
+          <div className="w-full md:w-3/5 bg-red-50 h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl relative">
             <Image
               src={'/prius3.png'}
               fill
