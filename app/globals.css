@@ -72,22 +72,6 @@ body {
   }
 }
 
-
-@layer base {
-  h1, h2, h3 {
-    @apply text-white;
-  }
-  p {
-    @apply text-gray-200;
-  }
-}
-
-/* @layer utilities {
-  .text-gradient {
-    @apply bg-gradient-to-r from-[#F28660] to-[#DE5E40] bg-clip-text text-transparent;
-  }
-} */
-
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-br from-[#F28660] via-[#E86E50] to-[#DE5E40] bg-clip-text text-transparent [background-size:300%] animate-gradient;
