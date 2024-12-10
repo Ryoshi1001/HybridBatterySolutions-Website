@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 // @ts-nocheck
 import React, { useEffect, useMemo, useState } from 'react';
