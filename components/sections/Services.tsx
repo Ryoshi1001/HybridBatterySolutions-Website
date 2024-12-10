@@ -11,7 +11,7 @@ const Services = () => {
   ));
   return (
     <>
-       <div id="services" className="text-4xl pl4 text-gradient font-bold">Services</div> 
+       <div id="services" className="text-4xl xs:text-3xl  pl4 text-gradient font-bold w-full">Services</div> 
 
        <div className="w-full h-full py-4">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">

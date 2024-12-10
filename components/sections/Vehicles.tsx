@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Vehicles = () => {
   return (
     <div>
-      <div id="vehicles" className="text-4xl pl4 text-gradient font-bold">
+      <div id="vehicles" className="text-4xl xs:text-3xl  pl-4 text-gradient font-bold">
         Vehicle Make/Model
       </div>
       <div className="flex items-center justify-center flex-wrap gap-4 py-4 px-4">

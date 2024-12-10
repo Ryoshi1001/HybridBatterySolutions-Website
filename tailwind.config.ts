@@ -79,6 +79,15 @@ const config = {
         'xl': '1280px',
         '2xl': '1536px',
       },
+      keyframes: {
+        gradient: {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' }
+        }
+      },
+      animation: {
+        gradient: 'gradient 4s ease infinite'
+      },
     },
   },
   plugins: [require('tailwindcss-animate'), addVariablesForColors],

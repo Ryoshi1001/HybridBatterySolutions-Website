@@ -6,7 +6,7 @@ import { Button } from '../ui/moving-border';
 const Appointment = () => {
   return (
     <>
-      <div className="text-4xl text-gradient font-bold">
+      <div className="text-4xl xs:text-3xl text-gradient font-bold">
         Appointment Scheduling
       </div>
       <FlipText />

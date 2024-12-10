@@ -18,7 +18,7 @@ const Hero = () => {
  
   return (
     <div
-      className="h-[300vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md pt-24 overflow-clip relative"
+      className="h-[300vh] bg-gradient-radial from-gray-800 via-gray-900 to-black w-full dark:border dark:border-white/[0.1] rounded-md pt-24 overflow-clip relative"
       ref={ref}
     >
       <GoogleGeminiEffect

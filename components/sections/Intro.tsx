@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <>
       <section className="w-full h-fit">
-        <div id="about" className="text-4xl text-gradient font-bold">
+        <div id="about" className="text-4xl xs:text-3xl text-gradient font-bold">
           About Us
         </div>
 
