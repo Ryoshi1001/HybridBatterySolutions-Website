@@ -20,30 +20,30 @@ export default function FeaturesSectionDemo() {
     {
       title: 'Find Us On Yelp!',
       description:
-        'All our work is guaranteed, labor and installation is included.',
+        '',
       skeleton: <SkeletonOne />,
       className:
-        'col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800',
+        'col-span-1 lg:col-span-5 border-b lg:border-r dark:border-neutral-800',
     },
     {
-      title: 'Capture pictures of our Work',
+      title: 'Capture pictures of Our Repair Gallery',
       description:
-        'Capture stunning photos effortlessly using our advanced AI technology.',
+        'Visual showcase of our hybrid battery repair expertise and precision work.',
       skeleton: <SkeletonTwo />,
-      className: 'border-b col-span-1 lg:col-span-2 dark:border-neutral-800',
+      className: 'border-b col-span-1 lg:col-span-3 dark:border-neutral-800',
     },
     {
-      title: 'Know Your Hybrid on YouTube',
-      description: 'Intro about Hybrid Batteries in a Toyota',
+  title: 'Understanding Hybrid Technology',
+  description: 'Explore the innovative features and benefits of Toyota\'s hybrid systems.',
       skeleton: <SkeletonThree />,
       className:
-        'col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800',
+        'col-span-1 lg:col-span-4 lg:border-r  dark:border-neutral-800',
     },
     {
       title: 'Check Our Business Profile on Google',
       description: 'Same Day Service is also Available!',
       skeleton: <SkeletonFour />,
-      className: 'col-span-1 lg:col-span-3 border-b lg:border-none',
+      className: 'col-span-1 lg:col-span-4 border-b lg:border-none',
     },
   ];
   return (
@@ -59,7 +59,7 @@ export default function FeaturesSectionDemo() {
       </div>
 
       <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
+        <div className="grid grid-cols-1 lg:grid-cols-8 mt-12 xl:border rounded-md dark:border-neutral-800">
           {features.map((feature, id) => (
             <FeatureCard key={id} className={feature.className}>
               <FeatureTitle>
@@ -179,7 +179,7 @@ export const SkeletonOne = () => {
 
   return (
     <div className="relative flex py-8 px-2 gap-10 h-full">
-      <div className="w-full  p-5  mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
+      <div className="w-full p-5  mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
         <Link
           href="https://www.yelp.com/biz/hybrid-battery-solutions-san-leandro-ca"
           target="__blank"
@@ -234,12 +234,12 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   const [rotationValues, setRotationValues] = useState<number[]>([]);
+  const [rotationValues2, setRotationValues2] = useState<number[]>([]);
 
   const images = useMemo(
     () => [
       '/services10.jpg',
       '/services1.jpg',
-      '/services5.jpg',
       '/services6.jpg',
       '/services7.jpg',
       '/services8.jpg',
@@ -248,14 +248,26 @@ export const SkeletonTwo = () => {
     []
   );
 
+  const images2 = useMemo(
+    () => [
+      '/nissan2.png',
+      '/prius3.png',
+      '/prius4.jpg',
+      '/prius5.jpg',
+      '/camry1.png',
+      '/services4.jpg',
+    ],
+    []
+  );
+
   const attribute = [
-    `<div>Hybrid Battery Solutions on Jan 27, 2019, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=ERdu-ba4LeJfrVkJubFMyQ&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
-    `<div>Daisy C. on Jan 6, 2022, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=xLvzm8jVBfLVeEfSN7hoVw&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
-    `<div>Hybrid Battery Solutions on May 24, 2018, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=utzt3PDOoNNDTcJyHgd_Hg&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
-    `<div>Hybrid Battery Solutions on May 24, 2018, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=hz0hX67kZ_jdbI1fzb-YBQ&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
-    `<div>Hybrid Battery Solutions on Jan 27, 2018, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=SYJIpQ7tKHrrVzaOjH-5MQ&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
-    `<div>Hybrid Battery Solutions on May 24, 2018, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=tSlhT9F2tyiUgtqutGIP4w&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
-    `<div>Hybrid Battery Solutions on Jan 27, 2019, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=DQhtUsp3s9e92yh-YlmQ_Q&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
+    `<div>Photo By Hybrid Battery Solutions on Jan 27, 2019, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=ERdu-ba4LeJfrVkJubFMyQ&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
+    `<div>Photo By Daisy C. on Jan 6, 2022, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=xLvzm8jVBfLVeEfSN7hoVw&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
+    `<div>Photo By Hybrid Battery Solutions on May 24, 2018, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=utzt3PDOoNNDTcJyHgd_Hg&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
+    `<div>Photo By Hybrid Battery Solutions on May 24, 2018, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=hz0hX67kZ_jdbI1fzb-YBQ&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
+    `<div>Photo By Hybrid Battery Solutions on Jan 27, 2018, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=SYJIpQ7tKHrrVzaOjH-5MQ&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
+    `<div>Photo By Hybrid Battery Solutions on May 24, 2018, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=tSlhT9F2tyiUgtqutGIP4w&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
+    `<div>Photo By Hybrid Battery Solutions on Jan 27, 2019, via <a href='https://www.yelp.com/biz_photos/hybrid-battery-solutions-san-leandro-ca?select=DQhtUsp3s9e92yh-YlmQ_Q&utm_campaign=www_photo_share_popup&utm_medium=copy_link&utm_source=%28direct%29'>Yelp</a></div>`,
   ];
 
   const imageVariants = {
@@ -273,25 +285,31 @@ export const SkeletonTwo = () => {
 
   useEffect(() => {
     // Generate random rotation values for each image
-    const newRotationValues = images.map(() => Math.random() * 20 - 8);
+    const newRotationValues = images.map(() => Math.random() * 20 - 10);
     setRotationValues(newRotationValues);
   }, [images]);
 
+  useEffect(() => {
+    // Generate random rotation values for each image
+    const newRotationValues2 = images2.map(() => Math.random() * 20 - 8);
+    setRotationValues2(newRotationValues2);
+  }, [images2]);
+
   return (
-    <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
-      <div className="flex flex-row md:flex-col md:ml-8 -ml-20">
+    <div className="relative flex flex-col md:flex-row items-start p-8 md:p-2 gap-10 h-full overflow-hidden">
+      <div className="flex flex-row md:flex-col md:ml-8 -ml-20 z-10">
         {images.map((image, idx) => (
           <motion.div
             variants={imageVariants}
             key={'images-first' + idx}
             style={{
-              rotate: rotationValues[idx] || 0, // Use the random value or default to 0 if not set yet
+              rotate: rotationValues[idx ] || 0, // Use the random value or default to 0 if not set yet
             }}
             whileHover="whileHover"
             whileTap="whileTap"
             // @ts-expect-error: Suppressing type error for className
 
-            className="h-auto w-20 md:w-44 rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="h-auto w-20 md:w-44 rounded-xl -mr-4 md:-mr-12 lg:-mr-14 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden "
           >
             <Image
               src={image}
@@ -306,29 +324,30 @@ export const SkeletonTwo = () => {
           </motion.div>
         ))}
       </div>
-      <div className="flex flex-row md:hidden">
-        {images.map((image, idx) => (
+      <div className="flex flex-row md:flex-col ">
+        {images2.map((image, idx) => (
           <motion.div
             key={'images-second' + idx}
             style={{
-              rotate: rotationValues[idx] || 0, // Use the same random value here
+              rotate: rotationValues2[idx] || 0, // Use the same random value here
             }}
             variants={imageVariants}
             whileHover="whileHover"
             whileTap="whileTap"
             // @ts-expect-error: Suppressing type error for className
 
-            className="rounded-xl h-auto w-20 md:w-44 -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl h-auto w-20 md:w-44 -mr-4 lg:-mr-14 mt-4 md:mt-6 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
               alt="bali images"
               width="500"
               height="500"
-              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+              className="rounded-lg h-20 w-20 md:h-30 md:w-44 object-cover flex-shrink-0"
             />
             <div className="text-[10px] text-center mt-1 text-wrap break-words">
-              {attribute[idx] && <DynamicYelpReview html={attribute[idx]} />}
+              Hybrid Battery Solutions
+              {/* {attribute[idx] && <DynamicYelpReview html={attribute[idx]} />} */}
             </div>
           </motion.div>
         ))}
@@ -343,7 +362,7 @@ export const SkeletonTwo = () => {
 export const SkeletonFour = () => {
   return (
     <Link href="https://maps.app.goo.gl/eFUn22Y58op2dXYo9" target="_blank">
-      <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10">
+      <div className="h-60 md:h-80  flex flex-col  relative bg-transparent dark:bg-transparent mt-10">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12624.812802714483!2d-122.19593883009465!3d37.71490795200545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f854ee9c2ef8d%3A0x152799be537888e9!2sHybrid%20Battery%20Solutions!5e0!3m2!1sen!2sus!4v1733612999655!5m2!1sen!2sus"
           width="600"

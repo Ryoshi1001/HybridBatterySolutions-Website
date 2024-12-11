@@ -21,7 +21,7 @@ export const GoogleGeminiEffect = ({
 }) => {
   return (
     <div className={cn("sticky top-64", className)}>
-      <p className="text-3xl md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent text-gradient">
+      <p className="text-3xl md:text-7xl xs:font-bold font-normal pb-4 text-center bg-clip-text text-transparent text-gradient">
         {title || `Hybrid Battery Solutions`}
       </p>
       <p className="text-base md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">

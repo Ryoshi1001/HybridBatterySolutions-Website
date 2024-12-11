@@ -14,13 +14,20 @@ const Intro = () => {
           About Us
         </div>
 
-        <div className="flex flex-col xs:flex-col-reverse gap-[20px]  justify-between items-center md:flex-row w-full h-full py-4">
+        <div className="flex flex-col xs:flex-col-reverse gap-[20px]  justify-between items-center md:flex-row w-full h-full py-6">
           <div className="w-full md:w-2/5 md:h-full flex flex-col gap-1">
             <h1 className="font-bold text-4xl xs:text-3xl">
               Hybrid Battery Solutions of San Leandro{' '}
               <small className="text-xs text-gradient">
                 Established in 2017
               </small>
+              <Image
+              src={'/logotransparent.png'}
+              width={32}
+              height={32}
+              alt='logo'
+              className='inline-block pl-2'
+              /> 
             </h1>
             <p>
               We specialize in{' '}
@@ -51,7 +58,7 @@ const Intro = () => {
                 <strong className="text-gradient">
                   Convenient Service Options:
                 </strong>{' '}
-                Enjoy the flexibility of on-site repairs or drop by one of our
+                Enjoy the flexibility of on-site repairs or drop by our
                 location—whichever works best for you!
               </li>
             </ul>

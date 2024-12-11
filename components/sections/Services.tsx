@@ -11,11 +11,11 @@ const Services = () => {
   ));
   return (
     <>
-       <div id="services" className="text-4xl xs:text-3xl  pl4 text-gradient font-bold w-full">Services</div> 
+       <div id="services" className="text-4xl xs:text-3xl text-gradient font-bold w-full">Services</div> 
 
        <div className="w-full h-full py-4">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Get to know your Hybrid.
+      <h2 className="max-w-7xl mx-auto text-2xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+      Comprehensive Care for Your Hybrid Vehicles
       </h2>
       <Carousel items={cards} />
     </div>
@@ -64,27 +64,33 @@ const data = [
     content: <DummyContent />,
   },
   {
-    category: "The Triangle",
-    title: "Red/Yellow Triangle with Engine Light.",
+    category: "Red Triangle of Death",
+    title: "Hybrid System Warning Light.",
     src: "/services1.jpg",
     content: <DummyContent />,
   },
+  // {
+  //   category: "Red Triangle of Death",
+  //   title: "Hybrid System Warning Light.",
+  //   src: "/hybridwarningtriangle.png",
+  //   content: <DummyContent />,
+  // },
   {
     category: "Error Message",
-    title: "Hybrid System Warning.",
+    title: "Check Hybrid System Warning.",
     src: "/services2.jpg",
     content: <DummyContent />,
   },
 
   {
-    category: "Modules",
-    title: "Cell Damage.",
+    category: "Battery Modules",
+    title: "Physical Cell Damage.",
     src: "/services4.jpg",
     content: <DummyContent />,
   },
   {
     category: "Replacement",
-    title: "Swap Your Battery Pack.",
+    title: "Battery Pack Exchange Service.",
     src: "/services6.jpg",
     content: <DummyContent />,
   },

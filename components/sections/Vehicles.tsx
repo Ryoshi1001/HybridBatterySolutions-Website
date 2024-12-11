@@ -6,10 +6,10 @@ import Image from 'next/image';
 const Vehicles = () => {
   return (
     <div>
-      <div id="vehicles" className="text-4xl xs:text-3xl  pl-4 text-gradient font-bold">
+      <div id="vehicles" className="text-4xl xs:text-3xl  text-gradient font-bold">
         Vehicle Make/Model
       </div>
-      <div className="flex items-center justify-center flex-wrap gap-4 py-4 px-4">
+      <div className="flex items-center justify-center flex-wrap gap-4 py-4">
         <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
           <Image
             src={`/prius3.png`}
