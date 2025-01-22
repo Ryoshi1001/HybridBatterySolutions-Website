@@ -59,7 +59,7 @@ export const FlipWords = ({
         }}
         // @ts-expect-error: Suppressing type error for className
         className={cn(
-          'z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 px-2',
+          'z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 px-2 xs:px-0',
           className
         )}
         key={currentWord}

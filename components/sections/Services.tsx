@@ -1,9 +1,6 @@
-"use client";
-import Image from "next/image";
-import React from "react";
-import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
- 
-
+'use client';
+import React from 'react';
+import { Carousel, Card } from '@/components/ui/apple-cards-carousel';
 
 const Services = () => {
   const cards = data.map((card, index) => (
@@ -11,95 +8,99 @@ const Services = () => {
   ));
   return (
     <>
-       <div id="services" className="text-4xl xs:text-3xl text-gradient font-bold w-full">Services</div> 
+      <h1
+        id="services"
+        className="text-4xl xs:text-3xl text-gradient font-bold w-full"
+      >
+        Our Services
+      </h1>
 
-       <div className="w-full h-full py-4">
-      <h2 className="max-w-7xl mx-auto text-2xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-      Comprehensive Care for Your Hybrid Vehicles
-      </h2>
-      <Carousel items={cards} />
-    </div>
-    </>
+      <div className="w-full h-full py-4">
+        <h2 className="max-w-7xl mx-auto text-2xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+          Comprehensive Care for Your Hybrid Vehicles
+        </h2>
+        <div className='grid grid-cols-2 mt-3 md:grid-cols-3 lg:grid-cols-5'>
+          <p className='font-light text-shadow-strong text-sm'>Full Service Repair</p>
+          <p className='font-light text-shadow-strong text-sm'>Invertor Replacement</p>
+          <p className='font-light text-shadow-strong text-sm'>Red Triangle Warning</p>
+          <p className='font-light text-shadow-strong text-sm'>Cluster Repair</p>
+          <p className='font-light text-shadow-strong text-sm'>Error Messages</p>
 
-  )
-}
+          <p className='font-light text-shadow-strong text-sm'>Battery Cell Cleaning</p>
+          <p className='font-light text-shadow-strong text-sm'>Battery Packs</p>
 
-const DummyContent = () => {
-  return (
-    <>
-      {[...new Array(3).fill(1)].map((_, index) => {
-        return (
-          <div
-            key={"dummy-content" + index}
-            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
-            <Image
-              src="https://assets.aceternity.com/macbook.png"
-              alt="Macbook mockup from Aceternity UI"
-              height="500"
-              width="500"
-              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
-          </div>
-        );
-      })}
+          <p className='font-light text-shadow-strong text-sm'>Water Pumps</p>
+   
+          <p className='font-light text-shadow-strong text-sm'>Battery Modules/Cells</p>
+
+          <p className='font-light text-shadow-strong text-sm'>Battery Recycling</p>
+
+        </div>
+
+        <Carousel items={cards} />
+      </div>
     </>
   );
 };
- 
+
+
+
 const data = [
   {
-    category: "Repair",
-    title: "Any Hybrid Battery Related Warning.",
-    src: "/prius4.jpg",
-    content: <DummyContent />,
+    category: 'Full Service Repair',
+    title: 'Comprehensive Solutions for Hybrid Battery Warnings.',
+    src: '/PriusServices1.png',
   },
   {
-    category: "Red Triangle of Death",
-    title: "Hybrid System Warning Light.",
-    src: "/services1.jpg",
-    content: <DummyContent />,
-  },
-  // {
-  //   category: "Red Triangle of Death",
-  //   title: "Hybrid System Warning Light.",
-  //   src: "/hybridwarningtriangle.png",
-  //   content: <DummyContent />,
-  // },
-  {
-    category: "Error Message",
-    title: "Check Hybrid System Warning.",
-    src: "/services2.jpg",
-    content: <DummyContent />,
-  },
-
-  {
-    category: "Battery Modules",
-    title: "Physical Cell Damage.",
-    src: "/services4.jpg",
-    content: <DummyContent />,
+    category: 'Red Triangle Warning',
+    title: 'Hybrid System Warning Lights: Red Triangle',
+    src: '/hybridwarningtriangle.png',
   },
   {
-    category: "Replacement",
-    title: "Battery Pack Exchange Service.",
-    src: "/services6.jpg",
-    content: <DummyContent />,
+    category: 'Battery Modules',
+    title: 'Physical Damage from Swollen, Corroded, or Malfunctioning Cells.',
+    src: '/damagedcells.png',
   },
-  // {
-  //   category: "Hiring",
-  //   title: "Hiring for a Staff Software Engineer",
-  //   src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   content: <DummyContent />,
-  // },
+  {
+    category: 'Battery Packs',
+    title: 'Battery Repair, Exchanges, & New Manufacturer OEM installations.',
+    src: '/services6.jpg',
+  },
+  {
+    category: 'Error Messages',
+    title: 'Check Hybrid System Warning Indicator Message.',
+    src: '/services2.jpg',
+  },
+  {
+    category: 'Inverter Replacement',
+    title:
+      'Restores Performance, Improves Fuel Efficiency, Prevents Further Damage To The Hybrid System.',
+    src: '/services7.jpg',
+  },
+  {
+    category: 'Instrument Cluster Repair',
+    title:
+      'Fix dashboard display issues, including speedometers, fuel indicators, and warning lights.',
+    src: '/clusterrepair.jpg',
+  },
+  {
+    category: 'Hybrid Battery Cell & Debris Service',
+    title:
+      "Enhance Your Hybrid Battery's Longevity with Our Expert Module Care Service.",
+    src: '/services8.jpg',
+  },
+  {
+    category: 'Water Pumps',
+    title:
+      'Water pump repair for ensuring proper circulation of coolant to prevent overheating..',
+    src: '/waterpump.jpg',
+  },
+  {
+    category: 'Battery Recycling',
+    title:
+      'Eco-Friendly Hybrid Battery Recycling: Drop Off Your Batteries for Responsible Disposal',
+    src: '/batteryrecycling.png',
+  },
 ];
 
-export default Services
+export default Services;

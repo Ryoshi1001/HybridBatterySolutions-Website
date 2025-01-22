@@ -3,11 +3,23 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-geist-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat);
 }
 
 @layer base {
   :root {
+    --font-geist-sans: 'Geist Sans', sans-serif;
+    --font-geist-mono: 'Geist Mono', monospace;
+    --font-montserrat: 'Montserrat', sans-serif;
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
     --card: 0 0% 100%;
@@ -60,6 +72,8 @@ body {
     --chart-3: 31 97% 69%;
     --chart-4: 291 64% 52%;
     --chart-5: 199 89% 58%;
+    --gradient-start: #4caf50; /* Bright Green */
+    --gradient-end: #a4d65e; /* Lime Green */
   }
 }
 
@@ -74,6 +88,170 @@ body {
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-br from-[#F28660] via-[#E86E50] to-[#DE5E40] bg-clip-text text-transparent [background-size:300%] animate-gradient;
+    @apply bg-gradient-to-br from-[#03F804] to-[#4CAF50] bg-clip-text text-transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-textgradient {
+    @apply bg-gradient-to-br from-[#03F804] to-[#FFEA00] bg-clip-text text-transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3),
+      /* Soft top shadow */ 1px 2px 4px rgba(0, 0, 0, 0.4),
+      /* Slightly offset shadow */ 2px 4px 8px rgba(0, 0, 0, 0.2); /* Broader, lighter shadow */
+  }
+
+  /* Alternative with more depth */
+  .text-shadow-strong {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 1px 2px 6px rgba(0, 0, 0, 0.4),
+      2px 4px 12px rgba(0, 0, 0, 0.3);
   }
 }
+
+@media only screen and (max-width: 639px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    position: relative;
+    touch-action: pan-y;
+  }
+  body {
+    max-width: 100vw;
+  }
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .streetcard {
+    width: 100%;
+    max-width: 438px;
+    height: 120px;
+    background: #353535;
+    transform-style: preserve-3d;
+    transform: perspective(30rem) rotateX(30deg);
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .streetcard::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(
+      90deg,
+      #fff 0%,
+      #fff 70%,
+      #353535 70%,
+      #353535 100%
+    );
+    background-size: 120px;
+    animation: animateRoad 1s linear infinite;
+  }
+  @keyframes animateRoad {
+    0% {
+      background-position: 0px;
+    }
+    100% {
+      background-position: 120px;
+    }
+  }
+
+  .streetcard::after {
+    content: '';
+    width: 100%;
+    max-width: 438px;
+    height: 20px;
+    position: absolute;
+    bottom: -20px;
+    background-color: #272727;
+    transform-origin: top;
+    transform: perspective(30rem) rotateX(-30deg);
+    box-shadow: 0 10px 20px -2px #272727;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .streetshadow {
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+
+
+.streetcard {
+  width: 100%;
+  max-width: 638px;
+  height: 120px;
+  background: #353535;
+  transform-style: preserve-3d;
+  transform: perspective(30rem) rotateX(30deg);
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.streetcard::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #fff 70%,
+    #353535 70%,
+    #353535 100%
+  );
+  background-size: 120px;
+  animation: animateRoad 1s linear infinite;
+}
+@keyframes animateRoad {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 120px;
+  }
+}
+
+.streetcard::after {
+  content: "";
+  width: 100%;
+  max-width: 638px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  background-color: #272727;
+  transform-origin: top;
+  transform: perspective(30rem) rotateX(-30deg);
+  box-shadow: 0 10px 20px -2px #272727;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.streetshadow {
+  color: #fff;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+

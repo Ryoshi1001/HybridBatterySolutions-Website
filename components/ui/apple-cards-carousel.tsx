@@ -26,7 +26,6 @@ type Card = {
   src: string;
   title: string;
   category: string;
-  content: React.ReactNode;
 };
 
 export const CarouselContext = createContext<{
@@ -127,7 +126,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                 }}
                 key={'card' + index}
                     // @ts-expect-error: Suppressing type error for className
-                className="last:pr-[5%] md:last:pr-[33%]  rounded-3xl"
+                className="last:pr-[5%] md:last:pr-[33%] rounded-3xl"
               >
                 {item}
               </motion.div>
@@ -237,7 +236,6 @@ export const Card = ({
               >
                 {card.title}
               </motion.p>
-              <div className="py-10">{card.content}</div>
             </motion.div>
           </div>
         )}
@@ -253,14 +251,14 @@ export const Card = ({
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
                 // @ts-expect-error: Suppressing type error for className
-            className="text-white text-sm md:text-base font-medium font-sans text-left"
+            className="text-white text-shadow text-sm md:text-base font-medium font-sans text-left"
           >
             {card.category}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
                 // @ts-expect-error: Suppressing type error for className
-            className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white text-shadow text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
           >
             {card.title}
           </motion.p>
