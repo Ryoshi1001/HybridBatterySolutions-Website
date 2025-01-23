@@ -6,12 +6,12 @@ import Image from 'next/image';
 const Vehicles = () => {
   return (
     <div>
-      <h1
+      <h3
         id="vehicles"
         className="text-4xl xs:text-3xl  text-gradient font-bold"
       >
         Vehicle Make/Model
-      </h1>
+      </h3>
       <div className="flex items-center justify-center flex-wrap gap-4 py-4">
         <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-8 bg-white dark:bg-zinc-900">
         <div className='w-[auto] h-[auto] xs:h-[auto] overflow-hidden'>

@@ -115,7 +115,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/hybrid.batter.solutions?mibextid=ZbWKwL"
+                href="https://www.facebook.com/people/Hybrid-Battery-Solutions/61572351121138/?mibextid=ZbWKwL"
                 className="text-[#1877F2] transition duration-300"
               >
                 <IconBrandFacebook size={30} />

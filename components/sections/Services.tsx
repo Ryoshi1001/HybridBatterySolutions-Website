@@ -8,12 +8,12 @@ const Services = () => {
   ));
   return (
     <>
-      <h1
+      <h3
         id="services"
         className="text-4xl xs:text-3xl text-gradient font-bold w-full"
       >
         Our Services
-      </h1>
+      </h3>
 
       <div className="w-full h-full py-4">
         <h2 className="max-w-7xl mx-auto text-2xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">

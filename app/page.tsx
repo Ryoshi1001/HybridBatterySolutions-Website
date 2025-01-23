@@ -1,4 +1,5 @@
 import Appointment from '@/components/sections/Appointment';
+import Contact from '@/components/sections/Contact';
 import Hero from '@/components/sections/Hero';
 import Intro from '@/components/sections/Intro';
 import Services from '@/components/sections/Services';
@@ -36,6 +37,10 @@ export default function Home() {
 
             <section className="h-fit mt-4">
               <Appointment />
+            </section>
+
+            <section className="h-fit mt-8">
+              <Contact />
             </section>
           </div>
         </TracingBeam>

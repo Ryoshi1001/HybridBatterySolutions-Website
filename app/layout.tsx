@@ -46,9 +46,9 @@ interface Metadata extends NextMetadata {
 }
 
 export const metadata: Metadata = {
-  title: 'Hybrid Battery Repair Services | San Leandro, San Francisco, San Jose & Bay Area',
+  title: 'Hybrid Battery Repair | San Leandro, San Francisco, Bay Area.',
   description:
-    'Expert hybrid and EV battery repair in the Bay Area.  Free diagnostics, quick turnaround, and mobile services available.  Save up to 50% vs dealership costs.  Same-day appointments for San Jose, San Francisco, Fremont, Hayward, Santa Clara, Palo Alto, and surrounding areas.  We offer full service repair, inverter replacement, red triangle warning fixes, cluster repair, error diagnostics, battery cleaning, and recycling.  warranty-backed services for all models including Toyota Prius, Camry, Nissan, Lexus & GMC.',
+    'Free Diagnostics, Quick Turnaround, Same-Day Appointments Serving Alameda, Oakland, Palo Alto, Fremont, Hayward, & Surrounding Cities.  Save Up To 50% vs Dealership Costs. Call 510-414-1929.',
     keywords: [
       'hybrid battery repair Bay Area',
       'hybrid battery replacement San Leandro',

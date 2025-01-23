@@ -7,9 +7,9 @@ const Intro = () => {
   return (
     <>
       <section className="w-full h-auto">
-        <h1 id="about" className="text-4xl xs:text-3xl text-gradient font-bold">
+        <h3 id="about" className="text-4xl xs:text-3xl text-gradient font-bold">
           About Us 
-        </h1>
+        </h3>
         <div className="flex flex-col xs:flex-col-reverse gap-[20px] justify-between items-center md:flex-row w-full h-full pt-6">
           <div className="w-full md:w-2/5 md:h-full flex flex-col gap-1">
             <h1 className="font-bold text-4xl xs:text-2xl">
