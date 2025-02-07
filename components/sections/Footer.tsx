@@ -1,9 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link';
-import {
-  IconBrandFacebook,
-  IconBrandInstagram,
-} from '@tabler/icons-react';
+import { IconBrandFacebook, IconBrandInstagram } from '@tabler/icons-react';
 import Image from 'next/image';
 
 const Footer = () => {
@@ -28,9 +25,9 @@ const Footer = () => {
                   className="pb-3 xs:block flex-1"
                 />
               </picture>
-              <h1 className="text-2xl font-bold block text-left md:text-sm lg:text-xl xl:text-xl 2xl:text-2xl  break-words text-wrap  xs:font-bold bg-clip-text text-transparent text-gradient flex-1 ">
+              <h3 className="text-2xl font-bold block text-left md:text-sm lg:text-xl xl:text-xl 2xl:text-2xl  break-words text-wrap  xs:font-bold bg-clip-text text-transparent text-gradient flex-1 ">
                 Hybrid Battery Solutions
-              </h1>
+              </h3>
             </div>
 
             <p className="text-sm text-gray-300 xs:px-4">
@@ -84,29 +81,68 @@ const Footer = () => {
                   Testimonials
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="#contact-form"
+                  className="hover:text-gradient transition duration-300"
+                >
+                  Contact Form
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="xs:px-4">
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-4">Contact Us Click Icon</h3>
             <div className="space-y-2">
-              <p className="text-sm text-gray-300 mb-2">
-                1366 Doolittle Dr, San Leandro, CA., 94577
-              </p>
+              <Link
+                href={'https://maps.app.goo.gl/eFUn22Y58op2dXYo9'}
+                target="_blank"
+                className="flex flex-row items-center gap-2"
+              >
+                <Image
+                  src={'/location-pin-svgrepo-com.svg'}
+                  width={30}
+                  height={30}
+                  alt="companylogo"
+                />
+                <p className="text-sm text-gray-300">
+                  1366 Doolittle Dr, San Leandro, CA., 94577
+                </p>
+              </Link>
+
               {/* <p className="text-sm text-gray-300 mb-2">Email: HybridBatterySolutions@mail.com</p> */}
-              <a
-                href="tel:5104141929"
-                className="text-sm text-gray-300 hover:text-gradient block"
+              <Link
+                href={'tel:5104141929'}
+                target="_blank"
+                className="flex flex-row items-center gap-2"
               >
-                Phone: 510-414-1929
-              </a>
-              <a
-                href="tel:5104141929"
-                className="text-sm text-gray-300 hover:text-gradient block"
+                <Image
+                  src={'/phonedrawing-svgrepo-com.svg'}
+                  width={30}
+                  height={30}
+                  alt="companylogo"
+                />
+                <p className="text-sm text-gray-300 hover:text-gradient block">
+                  Phone: 510-414-1929
+                </p>
+              </Link>
+              <Link
+                href={'https://wa.link/9p8a3w'}
+                target="_blank"
+                className="flex flex-row items-center gap-2"
               >
-                WhatsApp: 510-414-1929
-              </a>
+                <Image
+                  src={'/whatsapp-svgrepo-com.svg'}
+                  width={30}
+                  height={30}
+                  alt="companylogo"
+                />
+                <p className="text-sm text-gray-300 hover:text-gradient block">
+                  WhatsApp: 510-414-1929
+                </p>
+              </Link>
             </div>
           </div>
 
@@ -116,6 +152,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/people/Hybrid-Battery-Solutions/61572351121138/?mibextid=ZbWKwL"
+                target="_blank"
                 className="text-[#1877F2] transition duration-300"
               >
                 <IconBrandFacebook size={30} />
@@ -123,6 +160,7 @@ const Footer = () => {
 
               <a
                 href="https://www.instagram.com/hybrid.battery.solutions/profilecard/?igsh=MTc4MmM1YmI2Ng=="
+                target="_blank"
                 className="text-[#C13584] transition duration-300"
               >
                 <IconBrandInstagram size={30} />
@@ -142,7 +180,7 @@ const Footer = () => {
           <a
             href="mailto:ryoshi16421@proton.me"
             className="hover:underline ml-1"
-            target='_blank'
+            target="_blank"
           >
             Email Us
           </a>

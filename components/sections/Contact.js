@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div>
       <h3
-        id="services"
+        id="contact-form"
         className="text-4xl xs:text-3xl text-gradient font-bold w-full mb-4"
       >
         Contact Form

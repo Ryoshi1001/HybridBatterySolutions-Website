@@ -5,10 +5,9 @@ const Street = () => {
   return (
     <div className="streetcard relative mt-10 sm:mt-14">
       <div className="streetshadow text-sm text-wrap"></div>
-      <div className='w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] absolute -top-[100%] -right-4 sm:-top-[150%] sm:-right-8'>
+      <div className='w-[180px] h-[120px] sm:w-[240px] sm:h-[160px] absolute -top-[64%] right-4 sm:-top-[100%] sm:-right-18'>
         <Image
           fill
-          sizes='(max-width: 639px) 200px, (min-width: 800px) 280px'
           src={'/roadcar.png'}
           alt="car hybrid"
           className="rotate-[3deg]"

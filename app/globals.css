@@ -93,6 +93,13 @@ h6 {
     -webkit-text-fill-color: transparent;
   }
 
+  .bg-gradient {
+    @apply bg-gradient-to-br from-[#03F804] to-[#4CAF50] transition-all duration-300;
+  }
+  .hover-gradient {
+    @apply from-[#4CAF50] to-[#03F804];
+  }
+
   .hero-textgradient {
     @apply bg-gradient-to-br from-[#03F804] to-[#FFEA00] bg-clip-text text-transparent;
     -webkit-background-clip: text;

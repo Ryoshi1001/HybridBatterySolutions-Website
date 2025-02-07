@@ -1,4 +1,5 @@
 import Appointment from '@/components/sections/Appointment';
+import ChatQr from '@/components/sections/ChatQr';
 import Contact from '@/components/sections/Contact';
 import Hero from '@/components/sections/Hero';
 import Intro from '@/components/sections/Intro';
@@ -42,6 +43,11 @@ export default function Home() {
             <section className="h-fit mt-8">
               <Contact />
             </section>
+
+            <section className="h-fit mt-8">
+              <ChatQr />
+            </section>
+            
           </div>
         </TracingBeam>
       </div>

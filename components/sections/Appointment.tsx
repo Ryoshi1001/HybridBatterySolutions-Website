@@ -8,10 +8,9 @@ const Appointment = () => {
   return (
     <>
       <div className="">
-        <h1 className="text-4xl pb-4 xs:text-3xl text-gradient font-bold">
+        <h3 className="text-4xl pb-4 xs:text-3xl text-gradient font-bold">
           Appointment Scheduling
-        </h1>
-
+        </h3>
         <div className='flex flex-col gap-4 max-w-4xl sm:text-center sm:mx-auto'>
         <h2 className="
         text-2xl lg:text-3xl lg:leading-tight sm:mx-auto tracking-tight font-medium text-black dark:text-white

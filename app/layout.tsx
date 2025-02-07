@@ -5,12 +5,20 @@ import { ThemeProvider } from 'next-themes';
 import Footer from '@/components/sections/Footer';
 import ModeBtn from '@/components/sections/ModeBtn';
 import Script from 'next/script';
-import { Montserrat } from 'next/font/google';
 import Head from 'next/head';
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
+// import { Montserrat } from 'next/font/google';
+
+// const montserrat = Montserrat({
+//   subsets: ['latin'],
+//   variable: '--font-montserrat',
+// });
+
+const montserrat = localFont({
+  src: './fonts/Montserrat-VariableFont_wght.ttf', 
   variable: '--font-montserrat',
+  weight: '100 200 300 400 500 600 700 800 900',
+  display: 'swap' 
 });
 
 const geistSans = localFont({
@@ -48,7 +56,7 @@ interface Metadata extends NextMetadata {
 export const metadata: Metadata = {
   title: 'Hybrid Battery Repair | San Leandro, San Francisco, Bay Area.',
   description:
-    'Free Diagnostics, Quick Turnaround, Same-Day Appointments Serving Alameda, Oakland, Palo Alto, Fremont, Hayward, & Surrounding Cities.  Save Up To 50% vs Dealership Costs. Call 510-414-1929.',
+    'Free Diagnostics, Quick Turnaround, Same-Day Appointments. Serving San Francisco, Oakland, Palo Alto, Fremont, Hayward... Save Up To 50% vs Dealership Costs. Call 510-414-1929.',
     keywords: [
       'hybrid battery repair Bay Area',
       'hybrid battery replacement San Leandro',
@@ -61,7 +69,12 @@ export const metadata: Metadata = {
       'hybrid battery maintenance Santa Clara',
       'electric vehicle battery replacement Milpitas',
       'Prius battery repair Dublin',
-      'hybrid battery diagnostics Pleasanton'
+      'hybrid battery diagnostics Pleasanton', 
+      'hybrid battery repair Tracy ca', 
+      'hybrid battery repair Livermore ca', 
+      'hybrid battery fix Alameda ca', 
+      'Toyota Camry hybrid battery repair near me',
+      'Toyota Prius hybrid battery repair near me', 
     ],    
   authors: [{ name: 'Hybrid Battery Solutions' }],
   openGraph: {

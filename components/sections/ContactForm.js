@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <form name="contact" method="POST" data-netlify="true" action="/success" className='max-w-5xl mx-auto'>
+    <form name="contact" method="POST" data-netlify="true" action="/success" className='max-w-4xl mx-auto'>
       <input type="hidden" name="form-name" value="contact" />
       <div className='mb-5'>
         <label htmlFor='name' className='mb-3 block text-base font-medium text-gradient'>
@@ -16,7 +16,7 @@ export default function ContactForm() {
       </div>
       <div className='mb-5'>
         <label htmlFor='car' className='mb-3 block text-base font-medium text-gradient'>
-          Hybrid Year/Make/Model
+          Year/Make/Model
         </label>
         <input
           type='text'
@@ -33,7 +33,7 @@ export default function ContactForm() {
         <input
           type='tel'
           name="number"
-          placeholder='Contact Number'
+          placeholder='Contact number'
           className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
           required
         />
@@ -45,25 +45,25 @@ export default function ContactForm() {
         <input
           type='email'
           name="email"
-          placeholder='customer@email.com'
+          placeholder='youremail@domain.com'
           className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
           required
         />
       </div>
       <div className='mb-5'>
         <label htmlFor='message' className='mb-3 block text-base font-medium text-gradient'>
-          Describe Symptoms or Provide Error Code
+          Message or Error Codes
         </label>
         <textarea
           name="message"
           rows={4}
-          placeholder='Type your message'
+          placeholder='Kindly leave us your message'
           className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
           required
         ></textarea>
       </div>
       <div>
-        <button type="submit" className='hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
+        <button type="submit" className='hover:shadow-form rounded-md bg-gradient hover:hover-gradient py-3 px-8 text-base font-semibold text-white outline-none'>
           Submit
         </button>
       </div>

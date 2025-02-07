@@ -26,8 +26,8 @@ const Hero = () => {
       <div className="flex-1 flex flex-col items-center justify-start pt-8  xs:pt-14 sm:pt-12 md:pt-16 lg:pt-14 xl:pt-34 z-10">
         <Image
           src={'/LOGOMinified.png'}
-          width={260}
-          height={260}
+          width={248}
+          height={248}
           alt="companylogo"
           className="rounded-full lg:hidden mb-4"
         />
