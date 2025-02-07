@@ -1,5 +1,24 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+App's purpose: Was to help a busy small business have a website customers could visit, check services offered, to call, fill contact form, or use QR code to connect and ask questions or make appointment for car repair. 
+
+Major functions: Include enhanced SEO and also a working contact form. 
+
+Dependencies Include:     
+    "@tabler/icons-react": "^3.24.0",
+    "@types/nodemailer": "^6.4.17",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cobe": "^0.6.3",
+    "framer-motion": "^11.13.1",
+    "lucide-react": "^0.468.0",
+    "next": "^15.1.5",
+    "next-themes": "^0.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
+
 ## Getting Started
 
 First, run the development server:
